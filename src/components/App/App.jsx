@@ -20,7 +20,6 @@ export function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('hello');
     dispatch(fetchContacts());
   }, [dispatch]);
 
