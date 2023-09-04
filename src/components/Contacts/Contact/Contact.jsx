@@ -28,9 +28,9 @@ const Contact = () => {
         <ContactItem>
           {name} : {number}
         </ContactItem>
-        <Button type="button" onClick={() => dispatch(deleteContact(id))}>
-          Delete
-        </Button>
+        {/* <Button type="button" onClick={() => dispatch(deleteContact(id))}> */}
+        Delete
+        {/* </Button> */}
       </ContactContainer>
     );
   });

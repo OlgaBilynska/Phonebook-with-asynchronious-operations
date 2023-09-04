@@ -19,7 +19,28 @@ import * as API from './../contactsAPI';
 //   }
 // };
 
-export const fetchContacts = createAsyncThunk('contacts/fetchAll', async () => {
-  const response = await API.fetchContacts();
-  return response;
-});
+export const fetchContacts = createAsyncThunk(
+  'contacts/fetchAll',
+  async (_, { rejectWithValue }) => {
+    try {
+      const contacts = await API.fetchContacts();
+      console.log('contacts', contacts);
+      return contacts;
+    } catch (error) {
+      return rejectWithValue(error);
+    }
+  }
+);
+
+export const addContact = createAsyncThunk(
+  'contacts/addContact',
+  async (data, { rejectWithValue }) => {
+    try {
+      const newContact = await API.addContact(data);
+      console.log('nC', newContact);
+      return newContact;
+    } catch (error) {
+      return rejectWithValue(error);
+    }
+  }
+);

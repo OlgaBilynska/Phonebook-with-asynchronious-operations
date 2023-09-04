@@ -11,7 +11,8 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { reducer } from './reducers';
-// import { contactReducer } from './contactReducer';
+// import * as contactReducer from './contactReducer';
+// import * as contactReducer from './contactReducer';
 
 const persistConfig = {
   key: 'root',

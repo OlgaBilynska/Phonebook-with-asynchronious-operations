@@ -11,8 +11,7 @@ import {
   ErrorMessageForm,
   FieldForm,
 } from './ContactForm.styled';
-import { addContact } from 'redux/contactSlice';
-
+import { addContact } from './../../redux/operations';
 
 const initialValues = {
   name: '',
