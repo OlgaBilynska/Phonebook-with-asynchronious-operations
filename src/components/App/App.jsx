@@ -12,7 +12,6 @@ import {
   ContactTotal,
 } from './App.styled';
 import { getContacts } from 'redux/selectors';
-// import * as contactOperations from './../../redux/operations';
 import { fetchContacts } from 'redux/operations';
 
 export function App() {
