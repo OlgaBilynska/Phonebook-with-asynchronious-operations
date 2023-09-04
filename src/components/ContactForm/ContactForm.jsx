@@ -13,6 +13,7 @@ import {
 } from './ContactForm.styled';
 import { addContact } from 'redux/contactSlice';
 
+
 const initialValues = {
   name: '',
   number: '',
